@@ -1,26 +1,34 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: CatchyMager;
+    src: url('/Catchy Mager Regular.ttf');
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.png-to-white {
+    filter: brightness(0) invert(1);
+}
+
+.png-to-white:hover {
+    filter: grayscale(100%)
 }
 
 * {
-  box-sizing: border-box;
+    transition: 300ms ease;
+    font-family: 'CatchyMager', sans-serif;
+    letter-spacing: 0.05em;
+    line-height: 1.27;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.background-img-1 {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(https://lh3.googleusercontent.com/YE9M27VFTLKlrqhNPOtlSNv604PafTi7fEJ6awRRVTEy9RvvWA32Y0MiZ7awmUuwAlQk5Ot-qLNxq4REuazDew=w2880);
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
 }
