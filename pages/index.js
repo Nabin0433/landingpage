@@ -17,11 +17,11 @@ export default function Home() {
   }, [navOpen])
 
   const lockScroll = () => {
-    // document.body.classList.add('lock-scroll');
+    document.body.classList.add('lock-scroll');
   }
 
   const removeLockScroll = () => {
-    // document.body.classList.remove('lock-scroll');
+    document.body.classList.remove('lock-scroll');
   }
 
   const clickNav = (e) => {
