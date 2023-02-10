@@ -9,7 +9,7 @@ const ImageSlider = ({ images }) => {
     return (
         <Carousel transitionDuration={300}>
             {images.map(item => (
-                <img key={item.id} className='w-full h-full object-contain' src={item.img} alt={item.name} />
+                <img key={item.id} className='w-full h-full object-contain pointer-events-none' src={item.img} alt={item.name} />
             ))}
         </Carousel>
 

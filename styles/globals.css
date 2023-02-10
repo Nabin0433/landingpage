@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.lock-scroll {
+    overflow: hidden;
+}
+
 @font-face {
     font-family: CatchyMager;
     src: url('/Catchy Mager Regular.ttf');
@@ -42,9 +46,14 @@ html {
     margin: auto;
 
 }
+.carousel__dot{
+    height: 15px !important;
+    width: 15px !important;
+    border-radius: 50% !important;
+}
 
 .carousel__main {
-    height: 550px;
+    height: 600px;
     margin: 0px 10px;
 }
 
@@ -56,4 +65,101 @@ html {
     .carousel__main {
         height: 400px;
     }
+    .carousel__dot{
+        height: 10px !important;
+        width: 10px !important;
+        border-radius: 50% !important;
+    }
   }
+
+  .animate_menu{
+    animation: menu 300ms ease;
+  }
+
+  @keyframes menu {
+    0%{
+        right: 0px;
+        left: 600px;
+    }
+    100%{
+        left: 0px;
+    }
+  }
+
+  /*  */
+
+  /* Position and sizing of burger button */
+.bm-burger-button {
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    right: 20px;
+    top: 30px;
+  }
+  
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: white;
+  }
+  
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+    background: white;
+  }
+  
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 30px !important;
+    width: 30px !important;
+    right: 18px !important;
+    top: 18px !important;
+  }
+
+  .bm-cross-button span {
+    height: 21px !important;
+  }
+  
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: white;
+  }
+  
+  /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+  .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+    top: 0px;
+  }
+  
+  /* General sidebar styles */
+  .bm-menu {
+    background: #1A3950;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+  }
+  
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+  
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: white;
+    padding: 0.8em;
+    font-size: 16px;
+  }
+  
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+  }
+  
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3) !important;
+  }
+  
