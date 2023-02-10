@@ -1,6 +1,8 @@
 {
     "logo": "logo.png",
     "small_logo": "logo-small.png",
+    "page_title": "Blue Peak Innovation",
+    "seo_description": "We are the leading company in wind turbine technology, providing efficient and cost-effective solutions for a sustainable future.",
     "navs": [
         {
             "name": "Who we are",
